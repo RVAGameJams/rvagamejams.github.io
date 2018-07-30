@@ -6,7 +6,11 @@
     <%- css('css/main') %>
 </head>
 <body>
-    <%- body -%>
+    <%- partial('_partial/header') %>
+    <div class="container">
+        <%- body -%>
+    </div>
+    <%- partial('_partial/footer') %>
 </body>
 <%- js('js/browsertest') %>
 </html>

@@ -80,3 +80,13 @@ theme: rvagj
 deploy:
   type: git
   repo: https://github.com/RVAGameJams/rvagamejams.github.io.git
+
+# Stylus
+## Docs: https://github.com/hexojs/hexo-renderer-stylus
+stylus:
+  compress: false
+  sourcemaps:
+    comment: true
+    inline: true
+    sourceRoot: ''
+    basePath: .
