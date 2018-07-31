@@ -11,7 +11,7 @@ Hexo-based homepage for RVA Game Jams and anything regarding game development in
 - `hexo server` to start a server on localhost:4000 that will recompile the site automatically as you make changes
 
 ## Build/Deploy
-- `hexo generate` to compile local files
+- `hexo generate` to compile local files into `public`
 - `git clone https://github.com/RVAGameJams/rvagamejams.github.io.git -b master .deploy_git` to init deploy folder the first time, or `cd .deploy_git` -> `git pull` -> `cd ..` if you have the folder already
 - `hexo deploy` to make a new commit with the compiled files in the deploy folder
 - `cd .deploy_git` -> `git push` -> `cd ..` to push the commits and actually update the server (BE CAREFUL WITH THIS, obviously)
