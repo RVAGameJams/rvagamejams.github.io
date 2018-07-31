@@ -2,11 +2,23 @@
 rva-red = #ed2e73
 rva-green = #96c93d
 rva-blue = #4e6db4
+
 font-header = 'Exo 2', sans-serif
 font-body = 'Roboto', sans-serif
+
+container-size = 1226px
+container-padding = 36px
+
+// util
+triangleLeft(size, color)
+    width: 0
+    height: 0
+    border-top: size solid transparent
+    border-left: size solid color
 
 // import all styles
 @require 'general'
 @require 'header'
 @require 'footer'
+@require 'hero'
 @require 'index'
