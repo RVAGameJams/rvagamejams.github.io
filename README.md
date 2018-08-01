@@ -12,6 +12,6 @@ Hexo-based homepage for RVA Game Jams and anything regarding game development in
 
 ## Build/Deploy
 - `hexo generate` to compile local files into `public`
-- `git clone https://github.com/RVAGameJams/rvagamejams.github.io.git -b master .deploy_git` to init deploy folder the first time, or `cd .deploy_git` -> `git pull` -> `cd ..` if you have the folder already
-- `hexo deploy` to make a new commit with the compiled files in the deploy folder
-- `cd .deploy_git` -> `git push` -> `cd ..` to push the commits and actually update the server (BE CAREFUL WITH THIS, obviously)
+- `git clone https://github.com/RVAGameJams/rvagamejams.github.io.git -b master .deploy_git` to init deploy folder (only necessary the first time)
+- `hexo generate -deploy` to make a new commit with the compiled files and push it to the server (BE CAREFUL WITH THIS, obviously)
+- You might have to `git pull` the repo in `.deploy_git` if someone else deployed since your last push
