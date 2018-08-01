@@ -1,18 +1,19 @@
 .event-container
     display: flex
     flex-wrap: wrap
+    margin-bottom: 20px
     & > div
         flex-grow: 1
         flex-basis: 0
         min-width: 354px
-        // height: 300px
-        // &:nth-child(odd)
-        //  background: pink
-        // &:nth-child(even)
-        //  background: orange
+        margin: 0px 8px
         @media (max-width: 700px) {
             min-width: 70vw
         }
+        
+    h2
+        margin-top: 0
+        margin-bottom: 16px
     
     panel-height = 250px
     panel-padding = 12px
@@ -47,3 +48,28 @@
         padding-top: 6px
         padding-right: 6px
         transform: 'translateY(%s)' % (panel-height - 23px)
+    
+    info-size = 60px
+    infoPanel(icon)
+        display: flex
+        align-items: center
+        height: info-size
+        font-size: 0.9em
+        color: initial
+        text-decoration: none
+        transition: 0.3s background-color        
+        &:hover
+            background-color: lighten(rva-blue, 80%)
+        &::before
+            content: ' '
+            background-image: 'url(%s)' % icon
+            background-repeat: no-repeat
+            background-position: center
+            background-size: 24px
+            height: info-size
+            width: info-size
+
+    .address
+        infoPanel('../img/Map.png')
+    .time
+        infoPanel('../img/Clock.png')
