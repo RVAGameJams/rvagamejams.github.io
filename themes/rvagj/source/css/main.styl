@@ -24,10 +24,15 @@ adaptive-screen-size = container-size + 30px
 .float-right
     float: right;
     
-triangleLeft(size, color)
+triangleBottomLeft(size, color)
     width: 0
     height: 0
     border-top: size solid transparent
+    border-left: size solid color
+triangleTopLeft(size, color)
+    width: 0
+    height: 0
+    border-bottom: size solid transparent
     border-left: size solid color
     
 coveringImage()
