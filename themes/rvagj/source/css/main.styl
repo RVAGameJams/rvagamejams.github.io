@@ -6,20 +6,47 @@ rva-blue = #4e6db4
 font-header = 'Exo 2', sans-serif
 font-body = 'Roboto', sans-serif
 
-container-size = 1226px
+container-size = 1000px
 container-padding = 36px
 adaptive-screen-size = container-size + 30px
 
 // util
+.hidden
+    display: none !important;
+.show
+    display: block !important;
+.show-inline
+    display: inline-block !important;
+.show-flex
+    display: flex !important;
+.float-left
+    float: left;
+.float-right
+    float: right;
+    
 triangleLeft(size, color)
     width: 0
     height: 0
     border-top: size solid transparent
     border-left: size solid color
+    
+coveringImage()
+    width: 100%
+    height: 100%
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    
+.header-font
+    font-family: font-header
+    text-transform: uppercase
+    font-size: 2rem
+    letter-spacing: 3px
 
 // import all styles
-@require 'general'
+@require 'general' // general goes first
 @require 'header'
 @require 'footer'
 @require 'hero'
-@require 'index'
+@require 'event'
+@require 'index' // index goes last
