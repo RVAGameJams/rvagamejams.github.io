@@ -1,36 +1,31 @@
-<div class="event-container">
+<div class="event-container <%- type %>">
 	<div>
-		<h2>Ludum Dare 42</h2>
-		<div class="panel">
-			<div class="main-title">Game Jam</div>
-			<div class="sub-title">Make a game in 48 hours</div>
-			<div class="image" style="background-image: url(<%- site.data.vars.EventImage %>)"></div>
-			<div class="age">Age 18+</div>
-		</div>
+		<h2><%= title %></h2>
+		<% switch (type) {
+			case 'jam': %><%- partial('_partial/events/jam', locals) %><% break;
+			case 'monthly': %><%- partial('_partial/events/monthly', locals) %><% break;
+		} %>
 	</div>
 	<div>
-		<a class="address" href="https://www.google.com/maps/search/?api=1&query=804+RVA+1657+West+Broad+Street+%2C+Richmond%2C+VA" target="_blank" rel="noopener">
-			804RVA<br>
-			1657 West Broad Street<br>
-			Richmond, VA<br>
+		<a class="address" href="<%- getGoogleMapsUrl(`${location}, ${address1}, ${address2}`) %>" target="_blank" rel="noopener">
+			<%= location %><br>
+			<%= address1 %><br>
+			<%= address2 %><br>
 		</a>
-		<a class="time" href="http://www.google.com/calendar/event?action=TEMPLATE&dates=20180810T090000Z%2F20180812T140000Z&text=Ludum%20Dare%2042%20-%20RVA%20Game%20Jams&location=804%20RVA%2C%201657%20West%20Broad%20Street%2C%20Richmond%20VA&details=Ludum%20Dare%20is%20a%2048%20or%2072%20hour%20game%20jam%20in%20which%0Aparticipants%20are%20required%20to%20create%20a%20video%20game%0Afrom%20scratch%20that%20fits%20within%20a%20given%20theme.%0A%0ARVA%20Game%20Jams%20is%20hosting%20a%20local%20meetup%20for%0Adevelopers%20and%20creatives%20in%20the%20Richmond%20area%0Aand%20beyond!%20Come%20spend%20the%20weekend%20with%20the%0Acoolest%20people%20around%20and%20make%20something%20great!" target="_blank" rel="noopener">
-			Friday, August 10, 2018, 5:00 PM<br>
-			Sunday, August 12, 2018, 10:00 PM<br>
+		<a class="time" href="<%- getGoogleCalendarUrl(title, `${location}, ${address1}, ${address2}`, excerpt, moment(start, DATE_FORMAT), moment(end, DATE_FORMAT)) %>" target="_blank" rel="noopener">
+			<%= moment(start, DATE_FORMAT).format('dddd, MMMM D, YYYY, h:mm A') %><br>
+			<%= moment(end, DATE_FORMAT).format('dddd, MMMM D, YYYY, h:mm A') %>
 		</a>
 		<div class="description>">
-			Ludum Dare is a 48 or 72 hour game jam in which
-			participants are required to create a video game
-			from scratch that fits within a given theme.
-			<br><br>
-			RVA Game Jams is hosting a local meetup for
-			developers and creatives in the Richmond area
-			and beyond! Come spend the weekend with the
-			coolest people around and make something great!
+			<%- excerpt %>
 		</div>
 		<div class="links">
-			<a class="facebook" href="/" target="_blank" rel="noopener"><span>Facebook</span></a>
-			<a class="meetup" href="/" target="_blank" rel="noopener"><span>Meetup</span></a>
+			<% if (typeof facebook != 'undefined') { %>
+				<a class="facebook" href="<%- facebook %>" target="_blank" rel="noopener"><span>Facebook</span></a>
+			<% } %>
+			<% if (typeof meetup != 'undefined') { %>
+				<a class="meetup" href="<%- meetup %>" target="_blank" rel="noopener"><span>Meetup</span></a>
+			<% } %>
 		</div>
 	</div>
 </div>

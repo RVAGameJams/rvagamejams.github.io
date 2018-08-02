@@ -1,26 +1,12 @@
-.event-container
-    display: flex
-    flex-wrap: wrap
-    margin-bottom: 20px
-    & > div
-        flex-grow: 1
-        flex-basis: 0
-        min-width: 354px
-        margin: 0px 8px
-        @media (max-width: 700px) {
-            min-width: 70vw
-        }
-        
+panel-height = 250px
+panel-padding = 12px
+event(main-color)
     h2
-        margin-top: 0
-        margin-bottom: 16px
-    
-    panel-height = 250px
-    panel-padding = 12px
+        color: main-color
     .panel
         display: flex
         flex-direction: column
-        background-color: rva-blue
+        background-color: main-color
         height: panel-height
         padding: panel-padding
     .main-title
@@ -41,14 +27,14 @@
     .age
         @extend .header-font
         position: absolute
-        background-color: rva-blue
+        background-color: main-color
         color: white
         font-size: 0.8em
         letter-spacing: 1px
         padding-top: 6px
         padding-right: 6px
         transform: 'translateY(%s)' % (panel-height - 23px)
-    
+
     info-size = 60px
     infoPanel(icon)
         display: flex
@@ -59,7 +45,7 @@
         text-decoration: none
         transition: 0.3s background-color        
         &:hover
-            background-color: lighten(rva-blue, 80%)
+            background-color: lighten(main-color, 80%)
         &::before
             content: ' '
             background-image: 'url(%s)' % icon
@@ -73,6 +59,28 @@
         infoPanel('../img/Map.png')
     .time
         infoPanel('../img/Clock.png')
+
+.event-container
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 20px
+    & > div
+        flex-grow: 1
+        flex-basis: 0
+        min-width: 354px
+        margin: 0px 8px
+        @media (max-width: 700px) {
+            min-width: 70vw
+        }
+        
+    h2
+        margin-top: 0
+        margin-bottom: 16px
+                
+    &.jam
+        event(rva-blue)
+    &.monthly
+        event(rva-green)
         
     link(main-color)
         @extend .header-font
