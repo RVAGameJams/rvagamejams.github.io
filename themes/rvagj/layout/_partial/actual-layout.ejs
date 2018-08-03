@@ -4,6 +4,11 @@
     <title><%= page.title ? page.title + ' | ' : '' %><%= config.title %></title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="<%- site.data.vars.SiteDescription %>" />
+    <meta property="og:title" content="<%- site.data.vars.SiteTitle %>" />
+    <meta property="og:description" content="<%- site.data.vars.SiteDescription %>" />
+    <meta property="og:image" content="<%- site.data.vars.SiteImage %>" />
+    <link rel="shortcut icon" href="favicon.png" type="image/png" />
     <link href="https://fonts.googleapis.com/css?family=Exo+2:300|Roboto:300" rel="stylesheet">
     <%- css('css/main') %>
 </head>
