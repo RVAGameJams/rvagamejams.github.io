@@ -43,7 +43,8 @@ event(main-color)
         font-size: 0.9em
         color: initial
         text-decoration: none
-        transition: 0.3s background-color        
+        white-space: nowrap
+        transition: 0.3s background-color
         &:hover
             background-color: lighten(main-color, 80%)
         &::before
@@ -69,6 +70,7 @@ event(main-color)
         flex-basis: 0
         min-width: 354px
         margin: 0px 8px
+        margin-top: 10px
         @media (max-width: 700px) {
             min-width: 70vw
         }
