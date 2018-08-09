@@ -10,6 +10,8 @@ global.getEvents = (site) => _.chain(site.posts.data)
 	.sortBy(post => moment(post.start || post.date, DATE_FORMAT).valueOf())
 	.value()
 
+global.getEventsFutureOnly = (site) => getEvents(site).filter(post => moment.duration(moment(post.end || post.date, DATE_FORMAT).diff(moment())).asHours() > -6) // include events for ~6 hours after they end
+
 // util
 global.getGoogleMapsUrl = str => `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(str)}`
 global.getGoogleCalendarUrl = (title, location, description, start, end) => `http://www.google.com/calendar/event?action=TEMPLATE&dates=${start.utc().format('YYYYMMDDTHHmmss')}Z%2F${end.utc().format('YYYYMMDDTHHmmss')}Z&text=${encodeURIComponent(title + ' - RVA Game Jams')}&location=${encodeURIComponent(location)}&details=${encodeURIComponent(description)}`

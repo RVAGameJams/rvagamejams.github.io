@@ -2,7 +2,7 @@ layout: layout-with-hero
 ---
 <div class="upcoming-events-list">
 	<h1>Upcoming Events</h1>
-	<% getEvents(site).forEach(event => { %>
+	<% getEventsFutureOnly(site).forEach(event => { %>
 		<%- partial('_partial/event', event) %>
 	<% }) %>
 </div>
