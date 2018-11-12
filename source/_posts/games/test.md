@@ -1,0 +1,25 @@
+---
+layout: post
+title: test2
+date: 2018-11-12 14:33:57
+tags:
+---
+
+
+	OOOOOOOOO	OOOOOOOOO	777777777
+	O	O	O	O	      7
+	O	O	O	O	     7
+	O	O	O	O	    7
+	O	O	O	O	   7
+	O	O	O	O	  7
+	OOOOOOOOO	OOOOOOOOO	 7
+
+************************************************************
+
+			****EASYIEST THING IN THE WORLD***
+
+	How to take of banners on free web pages follow my instrutions
+
+1.Write your web page in the <head> and don't make <body> then </html>
+
+									-oo7
