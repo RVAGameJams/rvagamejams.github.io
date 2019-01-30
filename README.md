@@ -35,13 +35,13 @@ Hexo-based homepage for RVA Game Jams and anything regarding game development in
 - You might have to `git pull` the repo in `.deploy_git` if someone else deployed since your last push
 
 ## Reference
-###Libraries & Frameworks
+### Libraries & Frameworks
 - Hexo
 - Node.js
 - Google-Spreadsheet
 
 
-###FAQ
+### FAQ
 - How do I update the Google Sheets Link?
 
 - How do I add new Itch.io collections for download?
