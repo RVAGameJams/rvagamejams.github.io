@@ -90,3 +90,17 @@ stylus:
     inline: true
     sourceRoot: ''
     basePath: .
+
+#Podcast
+podcast:
+  type: rss2
+  path: podcast.xml
+  limit: 20
+  hub:
+  url: https://drive.google.com
+  description: A podcast featuring RVA Game Jams speakers, events, and discussions.
+  language: en
+  copyright: "COPYRIGHT"
+  owner: ITUNES-OWNER
+  email: ITUNES-EMAIL
+  category: CATEGORY
