@@ -6,8 +6,8 @@ tags:
 location: Main Branch - Richmond Public Library
 address1: 101 E Franklin St
 address2: 'Richmond, VA'
-start: 04/10/2019 5:30PM
-end: 04/10/2019 7:30PM
+start: 04/11/2019 5:30PM
+end: 04/11/2019 7:30PM
 age: 18+
 date: 2019-03-06 13:05:50
 ---
