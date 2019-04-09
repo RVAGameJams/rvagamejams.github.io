@@ -22,6 +22,7 @@ Hexo-based homepage for RVA Game Jams and anything regarding game development in
 - `hexo new podcast "Podcast Title"' to create a new podcast in the `source/_posts` folder (a markdown file and a corresponding asset folder)
 - Fill out all the information in the YAML front-matter, and then add whatever markdown you want to the details/descriptions
 - Add a `header.png` to the asset folder
+- Podcasts are hosted at: https://rvagamejams.com/podcast.xml
 
 ### Finding Static File URL for Google Drive
 - In order to get a static file link for a Google Drive File, you must call the Google Drive API using the file id and retrieve the webContentLink value, otherwise links will be short-lived
