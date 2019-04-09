@@ -30,9 +30,9 @@ Hexo-based homepage for RVA Game Jams and anything regarding game development in
 - In order to get the File ID, click "Get Shareable Link" withing Google Drive web interface, and the id at the end of the link is the file id
 
 ## Build/Deploy
-- `hexo generate` to compile local files into `public`
+- `hexo clean & hexo generate` to compile local files into `public` (YOU MUST CLEAN FIRST!!)
 - `git clone https://github.com/RVAGameJams/rvagamejams.github.io.git -b master .deploy_git` to init deploy folder (only necessary the first time)
-- `hexo generate -deploy` to make a new commit with the compiled files and push it to the server (BE CAREFUL WITH THIS, obviously)
+- `hexo clean & hexo generate -deploy` to make a new commit with the compiled files and push it to the server (BE CAREFUL WITH THIS, obviously)
 - You might have to `git pull` the repo in `.deploy_git` if someone else deployed since your last push
 
 ## Reference
