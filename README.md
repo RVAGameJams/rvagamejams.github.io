@@ -8,7 +8,7 @@ Hexo-based homepage for RVA Game Jams and anything regarding game development in
 - Navigate to folder and `npm install`
 
 ## Dev
-- `hexo server` to start a server on localhost:4000 that will recompile the site automatically as you make changes
+- `npm start` to start a server on localhost:4000 that will recompile the site automatically as you make changes
 
 ## Create
 
@@ -32,7 +32,7 @@ Hexo-based homepage for RVA Game Jams and anything regarding game development in
 ## Build/Deploy
 - `hexo clean & hexo generate` to compile local files into `public` (YOU MUST CLEAN FIRST!!)
 - `git clone https://github.com/RVAGameJams/rvagamejams.github.io.git -b master .deploy_git` to init deploy folder (only necessary the first time)
-- `hexo clean & hexo generate -deploy` to make a new commit with the compiled files and push it to the server (BE CAREFUL WITH THIS, obviously)
+- `npm run deploy` to make a new commit with the compiled files and push it to the server (BE CAREFUL WITH THIS, obviously)
 - You might have to `git pull` the repo in `.deploy_git` if someone else deployed since your last push
 
 ## Reference
