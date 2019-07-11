@@ -3,6 +3,7 @@
 		<h2><%= title %></h2>
 		<% switch (type) {
 			case 'jam': %><%- partial('_partial/events/jam', locals) %><% break;
+			case 'event': %><%- partial('_partial/events/event', locals) %><% break;
 			case 'monthly': %><%- partial('_partial/events/monthly', locals) %><% break;
 		} %>
 	</div>
