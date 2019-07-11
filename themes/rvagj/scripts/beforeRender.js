@@ -13,3 +13,7 @@ hexo.extend.filter.register('before_generate', function() {
 	// 	})
 	// 	;
 });
+hexo.extend.helper.register('versioned', function(input) {
+	var versionedFile = input.replace(/(\.[a-z0-9]+)/gi, '$1?t=' + new Date().getTime());
+	return versionedFile;
+});
