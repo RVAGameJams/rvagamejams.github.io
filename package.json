@@ -10,7 +10,7 @@
     "version": "3.8.0"
   },
   "dependencies": {
-    "async": "^2.6.1",
+    "async": "^3.2.2",
     "axios": "^0.18.0",
     "google-spreadsheet": "^2.0.6",
     "hexo": "^3.2.0",
