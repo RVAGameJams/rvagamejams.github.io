@@ -1,21 +1,34 @@
 layout: layout-with-hero
 ---
-<div class="game-list">
-	<h1>Games Developed With RVA Game Jams</h1>
-	<p>
-		<a href="https://rvagamejams.itch.io/"><img src="img/itch.svg" style="max-height: 40px;" /></a><br/>
-		Check out (almost) all of the games developed during our game jams on our <a href="https://rvagamejams.itch.io/"><b>Itch.io page</b></a>. Many games are playable right in the browser with no download required!
-	</p>
-</div>
-<div class="upcoming-events-list">
-	<h1>Upcoming Events</h1>
-	<% getEventsFutureOnly(site).forEach(event => { %>
-		<%- partial('_partial/event', event) %>
-	<% }) %>
-</div>
 <div class="intro">
 	<h1>What is RVA Game Jams?</h1>
 	<p>
 		RVA Game Jams is Richmond, Virginia's home-grown game development community. We focus on supporting developers of all skill ranges through local showcases, meetups, workshops, playtests, game jams, and more. We strive to foster aspiring creators to realize their goals, including members from underrepresented groups to help bring new ideas and perspectives to games. All ranges of skills and experiences are welcome, we'd love to have you as part of our community!
+	</p>
+</div>
+<div class="intro">
+	<h1>Join our Discord to see upcoming events!</h1>
+	<p>
+		<div class="icons" style="display: flex; width: 100%;">
+			<a href="<%- site.data.vars.Discord %>" target="_blank" rel="noopener" style="background-image: url('img/TheSkord.png')"></a>
+			<a href="<%- site.data.vars.Discord %>" target="_blank" rel="noopener" style="
+				flex-grow: 1;
+				font-weight: bold;
+				font-size: 1.4rem;
+			">Click to join Discord</a>
+		</div>
+		<ul>
+			<li>Social meetups every 3rd Monday of the month to hang out and stay in touch with the community</li>
+			<li>In-person 48-hour game jams 3-4 times a year</li>
+			<li>Recruit teammates for virtual game jams all year long</li>
+			<li>Share your work and questions in our channels for feedback anytime</li>
+		</ul>
+	</p>
+</div>
+<div class="game-list">
+	<h1>Games Developed With RVA Game Jams</h1>
+	<p>
+		<a href="https://rvagamejams.itch.io/"><img src="img/itch.svg" style="max-height: 40px;" /></a><br/>
+		Check out many of the games developed during our game jams on our <a href="https://rvagamejams.itch.io/"><b>Itch.io page</b></a>. Many games are playable right in the browser with no download required!
 	</p>
 </div>

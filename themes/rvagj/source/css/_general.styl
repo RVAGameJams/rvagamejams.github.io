@@ -3,7 +3,7 @@ html, body
     height: 100%
     margin: 0
     background-color: white
-    
+
 body
     display: flex
     flex-direction: column
@@ -13,7 +13,7 @@ body
 
 .hidden
     display: none
-    
+
 h1
     @extend .header-font
     padding-bottom: 3px
@@ -21,10 +21,15 @@ h1
 h2
     @extend h1
     color: rva-blue
-    
+
 p
     margin-top: 0
     margin-bottom: 1em
+    line-height: 1.5em
+
+ul
+    margin: 0
+    line-height: 2em
 
 .container
     width: container-size
@@ -33,10 +38,9 @@ p
     .container-padding
         padding: container-padding
         padding-bottom: 0
-    
+
     @media (max-width: adaptive-screen-size)
         width: 100%
         box-shadow: none
         .container-padding
             padding: container-padding-thin
-    

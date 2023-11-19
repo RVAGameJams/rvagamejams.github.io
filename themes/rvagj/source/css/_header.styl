@@ -1,25 +1,27 @@
+icon-height = 32px
+icon-padding = 5px
+
 header
     width: 100%
     background: white
     z-index: 1000
 
-    icon-height = 32px
-    icon-padding = 5px
-    .icons
-        height: icon-height
-        padding: 12px
-        a
-            width: icon-height + icon-padding*2
-            height: icon-height
-            background-size: contain
-            background-repeat: no-repeat
-            background-position: center
-        .logo
-            width: 130px
-        
     separator-size = 3px
     .separator
         height: separator-size
         background-color: rva-green
         border-top: separator-size solid rva-red
         border-bottom: separator-size solid rva-blue
+
+.icons
+    height: icon-height
+    padding: 12px
+    a
+        display: block
+        width: icon-height + icon-padding*2
+        height: icon-height
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: center
+    .logo
+        width: 130px
