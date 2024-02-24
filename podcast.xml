@@ -7,29 +7,28 @@
     <itunes:subtitle></itunes:subtitle>
     <itunes:author>RVA Game Jams</itunes:author>
     <itunes:summary>Homepage for RVA Game Jams and anything regarding game development in the Richmond VA area</itunes:summary>
-    <description>Homepage for RVA Game Jams and anything regarding game development in the Richmond VA area</description>
     <itunes:owner>
       <itunes:name>ITUNES-OWNER</itunes:name>
       <itunes:email>ITUNES-EMAIL</itunes:email>
     </itunes:owner>
-    <itunes:image href="https://rvagamejams.com"/>
+    <itunes:image href="https://rvagamejams.com" />
     <itunes:category text="CATEGORY">
-      <itunes:category text="CATEGORY"/>
+      <itunes:category text="CATEGORY" />
     </itunes:category>
-    <itunes:explicit></itunes:explicit>
+    <itunes:explicit>no</itunes:explicit>
     <language>en</language>
     
     <item>
       <title>Introducing the RVA Game Jams Podcast</title>
-      <description><![CDATA[<p>Introducing RVA Game Jams Podcast and the crew</p>
-]]></description>
-      <itunes:author>RVA Game Jams</itunes:author>
-      <itunes:subtitle></itunes:subtitle>
-      <itunes:summary></itunes:summary>
-      <itunes:image href="https://drive.google.com/a/jeffalot.io/uc?id=1rUMclNA2Vwg5afW0we29SfEHX-qjlg2B&amp;export=download"/>
+      <description> Introducing RVA Game Jams Podcast and the crew
+ </description>
+      <itunes:author> RVA Game Jams</itunes:author>
+      <itunes:subtitle> </itunes:subtitle>
+      <itunes:summary>  </itunes:summary>
+      <itunes:image href="https://drive.google.com/a/jeffalot.io/uc?id=1rUMclNA2Vwg5afW0we29SfEHX-qjlg2B&amp;export=download" />
       <enclosure url="https://drive.google.com/a/jeffalot.io/uc?id=1W9v_4qqw1f1pXmfQvoaVVNPpk5jo2KDk&amp;export=download" length="7122528--IN_BYTES" type=""/>
-      <guid>https://rvagamejams.com/2023/11/19/Introduction/</guid>
-      <pubDate>Sun, 19 Nov 2023 20:00:49 GMT</pubDate>
+      <guid></guid>
+      <pubDate>Sat, 24 Feb 2024 14:37:29 GMT</pubDate>
       <itunes:duration>00:06:48</itunes:duration>
       <psc:chapters version="1.2" xmlns:psc="http://podlove.org/simple-chapters">
         
