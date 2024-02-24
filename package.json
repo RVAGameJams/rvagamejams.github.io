@@ -8,13 +8,13 @@
     "deploy": "hexo clean & hexo generate -deploy"
   },
   "hexo": {
-    "version": "3.9.0"
+    "version": "7.1.1"
   },
   "dependencies": {
     "async": "^2.6.1",
     "axios": "^0.18.0",
-    "hexo": "^3.9.0",
     "google-spreadsheet": "^2.0.6",
+    "hexo": "^7.1.1",
     "hexo-deployer-git": "^0.3.1",
     "hexo-generator-archive": "^0.1.4",
     "hexo-generator-category": "^0.1.3",
